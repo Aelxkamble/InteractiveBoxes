@@ -1,0 +1,337 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  padding: 40px 60px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.container {
+  min-width: 341px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Lined Title Styling */
+.lined-title {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+  text-align: center;
+  color: #ff6b82;
+  position: relative;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lined-title::before,
+.lined-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #d3d3d3;
+  margin: 0 10px;
+}
+
+/* Box Styles */
+.box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19.88px 22px 19.34px 22px;
+  cursor: pointer;
+  background: #f9f9f9;
+  transition: background 0.3s ease;
+}
+.left-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.quantity {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 12.77px;
+}
+.right-part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+}
+.unit-1 {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+}
+.discount {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  background: #ff6b82;
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 1px;
+  margin-left: 3px;
+}
+
+.standard-price {
+  font-family: "Inter";
+  font-size: 12px;
+  padding-top: 3px;
+  font-weight: 400;
+  line-height: 14.52px;
+}
+
+.box-header:hover {
+  background: #ffe4e9;
+}
+
+#box-2 {
+  border: 2px solid #ff6b82;
+}
+
+.box-content {
+  display: none;
+  padding: 0px 10px;
+}
+
+.box-content.active {
+  display: block;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+  font-size: 14.46px;
+  font-weight: 500;
+  line-height: 17.5px;
+  font-family: "Inter";
+}
+
+.original-price {
+  padding-top: 5px;
+  text-decoration: "Strikethrough";
+  font-size: 10px;
+  color: #aaa;
+  font-weight: 400;
+  line-height: 12.1px;
+  font-family: "Inter";
+}
+
+.most-popular {
+  background: #ff6b82;
+  font-family: "Inter";
+  color: #fff;
+  padding: 5px 11px;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: 12px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.most-popular::before,
+.most-popular::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-style: solid;
+  border-width: 20px 10px;
+}
+
+.most-popular::before {
+  border-width: 10px 10px 0 0;
+  left: -10px;
+  border-color: transparent #d7445b transparent transparent;
+}
+
+.most-popular::after {
+  border-width: 10px 0 0 10px;
+  right: -10px;
+  border-color: transparent transparent transparent #d7445b;
+}
+.size-color {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7.5px;
+  flex-direction: row;
+}
+.first-option {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 7.5px;
+  flex-wrap: wrap;
+}
+
+.size-text {
+  font-family: "Inter";
+  font-size: 9.94px;
+  font-weight: 400;
+  line-height: 12.03px;
+  width: 65px;
+}
+.number-text {
+  font-family: "Inter";
+  font-size: 9.04px;
+  font-weight: 400;
+  line-height: 10.94px;
+}
+.box-content {
+  width: 200px;
+  height: 100px;
+  margin-left: 49.23px;
+}
+/* Total Section */
+.total {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 8px 0px 22px 0px;
+  font-weight: bold;
+  color: #333;
+}
+.free-delivery {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  color: #ff6b82;
+  margin: 0;
+}
+.total-price {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  margin: 0;
+}
+/* Add to Cart Button */
+.add-to-cart {
+  display: block;
+  width: 100%;
+  background: #ff6b82;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Inter";
+  cursor: pointer;
+  line-height: 14.52px;
+  transition: background 0.3s ease;
+}
+.powered-by-text {
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 14.52px;
+  margin-top: 12.5px;
+  color: #aaa;
+}
+.powred-by {
+  padding-top: 3px;
+  text-align: right;
+}
+.add-to-cart:hover {
+  background: #ff5066;
+}
+
+/* Style the checkbox */
+.checkbox-container input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ff6b82;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.checkbox-container input[type="radio"]:checked {
+  border-color: #fff;
+  background-color: #ff6b82;
+}
+
+.checkbox-container input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background: #ff6b82;
+  border-radius: 50%;
+}
+
+.size-options,
+.colour-options {
+  width: 65px;
+  font-size: 9.04px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  padding: 2px 3px;
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    padding: 5px;
+    height: 100%;
+  }
+  .main-container {
+    padding: 15px 10px;
+  }
+  .container {
+    min-width: 300px;
+  }
+  .lined-title {
+    margin: 10px 0px;
+  }
+  .box-header {
+    padding: 10px;
+  }
+  .price {
+    margin-top: 5px;
+  }
+  .box-content {
+    margin-left: 34.23px;
+  }
+}
